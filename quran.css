@@ -1,6 +1,41 @@
+/* new css */
+
 *{
-    margin: 0 !important;
+    margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    background-color: #fff;
+}
+.navbar{
+    width: 300px;
+    margin-left: -21.875rem;
+    background-color: lightseagreen;
+    transition: 0.5s;
+}
+li{
+    list-style: none;
+    font-size: 1.30em;
+    cursor: pointer;
+    padding-right: 100px !important;
+}
+.my-container{
+    transition: 0.4s;
+}
+.active-nav{
+    margin-left: 0;
+}
+.active-cont{
+    margin-left: 300px;
+}
+#menu-btn{
+    background-color: lightseagreen;
+    color: #fff;
+}
+#menu-btn:focus{
+    box-shadow: 0 0 0 0.25rem #087772;
 }
 #gif{
     position: fixed;
@@ -11,6 +46,76 @@
     text-align: center;
     z-index: 1000;
     justify-content: center;
+}
+@media (max-width: 786px) {
+    #sidebar{
+        margin-left: -21.875rem;
+    }
+    #sidebar:active{
+        margin-left: 0;
+    }
+    .my-container{
+        width: 100%;
+        margin: 0;
+    }
+    .my-container:active{
+        margin-left: 21.875rem;
+        width: calc(100% - 21.875rem);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* old css */
+
+/* *{
+    margin: 0 !important;
+    padding: 0;
 }
 #surah,
 #show,
@@ -42,11 +147,4 @@ li:hover{
 }
 nav{
     text-decoration: #fff;
-}
-
-
-
-
-
-
-/* which login system is the most reliable??? php or html. */
+} */

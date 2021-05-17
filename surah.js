@@ -33,7 +33,7 @@ $(document).on('click' , '#surah li', function(){
             for(i = 0; i < ayahs.length; i++){
                 html_data+= i+1+' . '+ayahs[i].text+'</br>'
             }
-            $('#showing').html(html_data)
+            $('#english').html(html_data)
             
         }
     })
@@ -49,7 +49,7 @@ $(document).on('click' , '#surah li', function(){
             for(i = 0; i < ayahs.length; i++){
                 html_data+= i+1+' . '+ayahs[i].text+'</br>'
             }
-            $('#show').html(html_data)
+            $('#bangla').html(html_data)
             
         }
     })
@@ -66,16 +66,10 @@ $(document).on('click' , '#surah li', function(){
             for(i = 0; i < ayahs.length; i++){
                 html_data+= i+1+' . '+ayahs[i].text+'</br>'
             }
-            $('#showed').html(html_data)
+            $('#arabic').html(html_data)
             $('html, body').animate({scrollTop: '0px'}, 1000);
             console.log(surah_data.data)
             $('#gif').hide();
         }
     })
 });
-
-
-
-
-
-// kjsgklflij
